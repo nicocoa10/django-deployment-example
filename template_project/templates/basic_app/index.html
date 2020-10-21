@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+{% load my_extras %}
+<!-- filters are like small functions that affect , edit a variable in template block {} -->
+<!-- you can specify the function by putting variable | filter: "some parameter" -->
+<h1>Welcome to Home Page!</h1>
+<h1> {{ text|cut:'Hello' }} </h1>
+<h1>{{ number|add:'99' }}</h1>
+{% endblock %}
